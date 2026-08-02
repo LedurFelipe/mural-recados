@@ -20,6 +20,9 @@ export default function RootLayout({
             <Link href="/" className="text-lg font-bold">
               Mural da turma
             </Link>
+            <Link href="/sobre" className="text-sm text-slate-600 hover:text-slate-900">
+              Sobre
+            </Link>
           </div>
         </header>
 
