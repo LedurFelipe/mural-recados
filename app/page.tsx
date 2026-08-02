@@ -1,4 +1,5 @@
 import CardRecado from "@/app/components/CardRecado";
+import FormRecado from "@/app/components/FormRecado";
 import { listarRecados } from "@/lib/dados";
 
 export default function Home() {
@@ -7,6 +8,10 @@ export default function Home() {
   return (
     <div>
       <h1 className="text-2xl font-bold">Recados</h1>
+
+      <div className="mt-6">
+        <FormRecado />
+      </div>
 
       <div className="mt-6 space-y-3">
         {recados.map((recado) => (
