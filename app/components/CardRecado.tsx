@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { excluirRecado } from "@/lib/actions";
 
 export default function CardRecado({
   id,
@@ -19,12 +20,25 @@ export default function CardRecado({
         <p className="text-sm text-slate-500">
           {autor} · {data}
         </p>
-        <Link
-          href={`/recado/${id}`}
-          className="text-sm text-emerald-600 hover:text-emerald-700"
-        >
-          ver recado
-        </Link>
+
+        <div className="flex items-center gap-4">
+          <Link
+            href={`/recado/${id}`}
+            className="text-sm text-emerald-600 hover:text-emerald-700"
+          >
+            ver recado
+          </Link>
+
+          {/* bind(null, id) entrega o id para a Server Action */}
+          <form action={excluirRecado.bind(null, id)}>
+            <button
+              type="submit"
+              className="text-sm text-slate-400 hover:text-red-600"
+            >
+              excluir
+            </button>
+          </form>
+        </div>
       </div>
     </article>
   );
