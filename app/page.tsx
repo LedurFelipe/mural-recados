@@ -12,6 +12,7 @@ export default function Home() {
         {recados.map((recado) => (
           <CardRecado
             key={recado.id}
+            id={recado.id}
             texto={recado.texto}
             autor={recado.autor}
             data={recado.data}
