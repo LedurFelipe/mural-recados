@@ -4,19 +4,19 @@ Projeto da **Oficina de introdução ao desenvolvimento web com Next.js**
 William Pilger · Felipe Ledur
 
 Vamos construir um mural de recados: uma lista, uma página de detalhe e um
-formulário que grava de verdade — usando Next.js 16, TypeScript e Tailwind.
+formulário que grava de verdade - usando Next.js 16, TypeScript e Tailwind.
 
 ---
 
 ## Antes da oficina
 
-Faça isso **em casa**, não na sala. Assim a gente não perde 15 minutos com download.
+Antes de começar, vamos conferir:
 
 | Você precisa de | Como conferir |
 | --- | --- |
 | Node.js 20.9 ou superior | `node -v` |
 | Git | `git --version` |
-| VS Code | — |
+| VS Code | - |
 
 Depois, clone e instale:
 
@@ -29,7 +29,7 @@ npm run dev
 
 Abra <http://localhost:3000>. Se aparecer "Mural da turma", está tudo certo.
 
-> **Clone, não baixe o ZIP.** O ZIP funciona, mas vem sem o histórico do Git —
+> **Clone, não baixe o ZIP.** O ZIP funciona, mas vem sem o histórico do Git -
 > e aí o comando de resgate abaixo não existe pra você.
 
 ---
@@ -40,13 +40,13 @@ Cada bloco tem uma branch com o código pronto até aquele ponto. Se travar,
 guarde o que você fez e pule para o trilho:
 
 ```bash
-git stash          # guarda suas alterações
+git stash          # guarda suas alterações (peça nossa ajuda para resgatar depois)
 git checkout etapa-2-componentes
 ```
 
 | Branch | Estado do projeto |
 | --- | --- |
-| `main` | ponto de partida — é onde a oficina começa |
+| `main` | ponto de partida - é onde a oficina começa |
 | `etapa-1-rotas` | página `/sobre`, navegação e a lista de recados na tela |
 | `etapa-2-componentes` | o componente `CardRecado` e o `.map()` |
 | `etapa-3-rota-dinamica` | a página `/recado/[id]` |
@@ -86,7 +86,7 @@ pode zerar a lista. Num projeto de verdade isso seria um banco de dados.
 `await params`. É estranho na primeira vez e você vai ver isso na `etapa-3`.
 
 **Nenhum arquivo aqui usa `"use client"`.** Dá pra fazer um CRUD inteiro só com
-Server Components e Server Actions — e essa é meio que a graça.
+Server Components e Server Actions - e essa é meio que a graça.
 
 ---
 
