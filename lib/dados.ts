@@ -1,7 +1,7 @@
 import type { Recado } from "./types";
 
 // "Banco de dados" da oficina: um array na memória do servidor.
-// Some quando você reinicia o `npm run dev` — e tudo bem, é só uma oficina.
+// Some quando você reinicia o `npm run dev` - e tudo bem, é só uma oficina.
 let recados: Recado[] = [
   { id: 1, texto: "Boa sorte na prova de amanhã!", autor: "Ana", data: "02/08" },
   { id: 2, texto: "Alguém tem o link do repositório?", autor: "Léo", data: "02/08" },
